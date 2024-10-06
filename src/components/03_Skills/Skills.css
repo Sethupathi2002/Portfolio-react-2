@@ -1,0 +1,89 @@
+.skills-container {
+    margin: 0 100px;
+    margin-bottom: 100px;
+}
+
+.skills-heading h1 {
+    color: var(--font-color-red);
+    margin-bottom: 15px;
+}
+
+.skills-content-skills {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-content-skills h2:hover {
+    color: var(--font-color-red);
+}
+
+.skills-content-skills h2 {
+    position: relative;
+}
+
+.skills-content-skills h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--font-color-red);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-content-skills h2:hover::after {
+    transform: scaleX(1);
+}
+
+.skills-content-skills h2.active::after {
+    transform: scaleX(1);
+}
+
+.skills-content-details {
+    line-height: 1.4;
+}
+
+.skills-content-skills-span {
+    color: var(--font-color-red);
+    font-size: 1.1rem;
+}
+
+.skills-content-skills-span-marks {
+    color: var(--font-color-red);
+}
+
+.skills-content-skills-span-edu {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.skill-div-front-end h3 {
+    font-size: 1.5rem;
+}
+
+.skill-div-back-end h3 {
+    font-size: 1.5rem;
+}
+
+.skills-content-two-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content-png img {
+    width: 400px;
+}
+
+.skills-content-png {
+    margin-right: 70px;
+}
+
+.skill-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

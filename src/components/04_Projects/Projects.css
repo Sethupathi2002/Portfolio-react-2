@@ -1,0 +1,14 @@
+.projects-container {
+    margin: 0 100px;
+    margin-bottom: 100px;
+}
+
+.projects-container h2 {
+    margin-bottom: 15px;
+    color: var(--font-color-red);
+}
+
+.project-content p {
+    color: gray;
+
+}

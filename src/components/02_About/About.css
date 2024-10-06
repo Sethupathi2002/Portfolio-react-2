@@ -1,0 +1,71 @@
+@import url(../../var.css);
+
+main {
+    margin: 0 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+main {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.main-image-div img {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.main-content-div p {
+    font-size: 1.1rem;
+}
+
+.main-content-name {
+    font-size: 3.5rem;
+}
+
+.main-content-skill {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.main-content-name-span,
+.main-content-skill-span {
+    color: var(--font-color-red);
+}
+
+.main-content-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-content-icons a {
+    font-size: 1.5rem;
+    color: var(--font-color-red);
+    padding: 10px;
+    border: 2px solid var(--font-color-red);
+    border-radius: 50%;
+}
+
+.main-content-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px var(--font-color-red);
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 800px) {
+    main {
+        margin: 0 60px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

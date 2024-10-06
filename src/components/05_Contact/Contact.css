@@ -1,0 +1,127 @@
+.contact-container {
+    margin: 0 100px;
+    margin-bottom: 100px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-heading h2 {
+    color: var(--font-color-red);
+}
+
+.contact-container p icon {
+    color: var(--font-color-red);
+}
+
+.contact-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+.contact-left-side h1 {
+    font-size: 2.5rem;
+}
+
+.contact-content-text {
+    line-height: 1.5;
+}
+
+.contact-content-text p svg {
+    color: var(--font-color-red);
+}
+
+.contact-content-icons {
+    display: flex;
+    gap: 15px;
+
+}
+
+.contact-content-icons a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact-content-icons a:hover {
+    color: var(--font-color-red);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-content-button-div {
+    margin: 15px 15px 15px 0;
+}
+
+.contact-content-button {
+    padding: 15px;
+    background-color: var(--font-color-red);
+    color: white;
+    font-weight: 800;
+    border-radius: 14px;
+}
+
+.contact-content-button:hover {
+    background-color: #bc3c31;
+    transition: 0.3s ease-in-out;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    background-color: black;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-form:hover {
+    background-color: rgb(7, 7, 7);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form input {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #333333;
+    color: white;
+    border: none;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border: 1px solid var(--font-color-red);
+}
+
+
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    height: 100px;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--font-color-red);
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--font-color-red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact-form button:hover {
+    background-color: #bc3c31;
+    transition: 0.3s ease-in-out;
+}
