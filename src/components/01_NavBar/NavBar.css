@@ -63,7 +63,7 @@ nav {
 
 
 /* Tablets */
-@media (max-width: 800px) {
+@media (width <=800px) {
 
     nav {
         margin: 30px 60px;

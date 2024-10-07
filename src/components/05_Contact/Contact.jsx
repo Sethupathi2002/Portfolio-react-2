@@ -6,8 +6,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
+import resume from '../../assets/Sethupathi_Vijayakumar_Resume.pdf';
 
 import './Contact.css'
+
+
 
 function Contact() {
     return (
@@ -25,7 +28,7 @@ function Contact() {
                     <a href="https://x.com/Sethupathi_2002" target='_blank'><FontAwesomeIcon icon={faTwitter} /></a>
                 </div>
                 <div className='contact-content-button-div'>
-                    <a href="../../assets/Sethupathi_Vijayakumar_Resume.pdf" download="Sethupathi_Vijayakumar_Full_Stack_Developer_Resume.pdf" className='contact-content-button'>Download CV</a>
+                    <a href={resume} download="Sethupathi_Vijayakumar_Full_Stack_Developer_Resume.pdf" className='contact-content-button'>Download CV</a>
                 </div>
             </div>
             <div>
