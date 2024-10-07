@@ -31,7 +31,7 @@ function Contact() {
                     <a href={resume} download="Sethupathi_Vijayakumar_Full_Stack_Developer_Resume.pdf" className='contact-content-button'>Download CV</a>
                 </div>
             </div>
-            <div>
+            <div className='contact-form-div'>
                 <form action="" className='contact-form'>
                     <input type="text" placeholder="Enter your name" />
                     <input type="text" placeholder="Enter your email" />

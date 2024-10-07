@@ -142,8 +142,12 @@
         font-size: 1.2rem;
     }
 
+    .contact-left-side {
+        margin-bottom: 20px;
+    }
+
     .contact-form {
-        width: 400px;
+        width: 350px;
     }
 
     .contact-left-side h1 {
