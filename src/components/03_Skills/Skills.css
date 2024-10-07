@@ -8,6 +8,10 @@
     margin-bottom: 15px;
 }
 
+.skills-content-section h2 {
+    cursor: pointer;
+}
+
 .skills-content-skills {
     display: flex;
     gap: 20px;
@@ -86,4 +90,30 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+
+/*  Media query for mobile */
+
+@media(max-width:800px) {
+
+    .skills-container {
+        margin: 0 40px;
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+    }
+
+    .skills-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .skills-content-skills h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-content-two-section {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

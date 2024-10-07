@@ -125,3 +125,29 @@
     background-color: #bc3c31;
     transition: 0.3s ease-in-out;
 }
+
+@media (max-width: 800px) {
+
+    .contact-container {
+        margin: 0 40px;
+        align-items: start;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-content-icons a {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        width: 400px;
+    }
+
+    .contact-left-side h1 {
+        font-size: 2rem;
+    }
+
+}

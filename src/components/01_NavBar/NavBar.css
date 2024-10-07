@@ -66,7 +66,12 @@ nav {
 @media (width <=800px) {
 
     nav {
-        margin: 30px 60px;
+        margin: 30px 40px;
+        padding: 0;
+    }
+
+    nav {
+        font-size: 0.9rem;
     }
 
     .navbar-baricon-bar {
@@ -82,9 +87,13 @@ nav {
         position: absolute;
         right: 50%;
         flex-direction: column;
-        background: transparent;
-        padding: 0 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 8px 15px;
         z-index: 1;
+    }
+
+    .navbar-links-list li a:hover {
+        color: white;
     }
 }
 
