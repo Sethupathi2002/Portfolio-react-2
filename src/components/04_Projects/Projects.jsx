@@ -6,7 +6,7 @@ function Projects() {
             <h2>Projects</h2>
             <div className='project-content'>
                 <center>
-                    <p>Nothing to showcase</p>
+                    <p>Haven't done anything good enough to showcase</p>
                 </center>
             </div>
 
