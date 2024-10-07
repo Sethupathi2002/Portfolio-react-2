@@ -116,4 +116,8 @@
         flex-direction: column;
     }
 
+    .skills-content-png img {
+        width: 350px;
+    }
+
 }
