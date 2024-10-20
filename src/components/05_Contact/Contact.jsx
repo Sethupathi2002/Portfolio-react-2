@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import resume from '../../assets/Sethupathi_Vijayakumar_Resume.pdf';
+import resume from '../../assets/Sethupathi_Vijayakumar_Full_Stack_Developer_Resume.pdf';
 
 import './Contact.css'
 
