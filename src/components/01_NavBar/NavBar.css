@@ -61,6 +61,7 @@
     color: var(--text-secondary);
     font-weight: 600;
     font-size: 0.95rem;
+    white-space: nowrap;
     transition: color var(--transition);
 }
 
@@ -169,8 +170,11 @@
     transition: width 0.1s linear;
 }
 
-/* Tablets & mobile */
-@media (width <=800px) {
+/* Tablets & mobile — the full link row (6 items) plus search/language/theme
+   controls doesn't fit between ~800-1150px, and longer-language labels (e.g.
+   German "Fähigkeiten") need even more room, so the hamburger kicks in well
+   before the container-padding breakpoint. */
+@media (width <=1200px) {
     .navbar {
         padding: 16px var(--container-padding);
     }
@@ -184,6 +188,12 @@
     }
 
     .theme-toggle-desktop {
+        display: none;
+    }
+
+    /* Only the copy inside the slide-out menu should show; without this the
+       standalone trigger below stays visible behind the hamburger too. */
+    .navbar-links > .language-switcher {
         display: none;
     }
 

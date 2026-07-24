@@ -332,7 +332,13 @@ main::before {
 @media (max-width: 800px) {
     main {
         padding: 100px var(--container-padding) 50px;
-        gap: 30px;
+        gap: 0;
+    }
+
+    /* The fake code-editor visual is a nice-to-have on larger screens; on
+       phones it just pushes the real content down, so it's dropped entirely. */
+    .hero-visual {
+        display: none;
     }
 
     .hero-name {
@@ -368,11 +374,6 @@ main::before {
         height: 40px;
         font-size: 1rem;
     }
-
-    .code-window-body {
-        font-size: 0.76rem;
-        padding: 18px 16px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -382,9 +383,5 @@ main::before {
 
     .hero-stats {
         gap: 18px;
-    }
-
-    .code-window-body {
-        font-size: 0.68rem;
     }
 }
