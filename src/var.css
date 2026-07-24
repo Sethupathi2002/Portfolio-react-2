@@ -1,6 +1,102 @@
-:root {
-    --bg-color: #000000;
-    --font-color-white: white;
-    --font-color-red: #BF544A;
+:root,
+[data-theme='dark'] {
+    /* Surfaces */
+    --bg-color: #0a0b0f;
+    --bg-elevated: #111318;
+    --bg-elevated-2: #171a21;
+    --bg-soft: rgba(255, 255, 255, 0.04);
+    --bg-soft-hover: rgba(255, 255, 255, 0.07);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-color-strong: rgba(255, 255, 255, 0.14);
 
+    /* Text */
+    --text-primary: #f4f5f7;
+    --text-secondary: #aab0bc;
+    --text-muted: #767c8a;
+
+    /* Brand / accent */
+    --accent: #ff5b4c;
+    --accent-hover: #ff7466;
+    --accent-strong: #ff7466;
+    --accent-soft: rgba(255, 91, 76, 0.12);
+    --accent-soft-strong: rgba(255, 91, 76, 0.22);
+    --accent-contrast: #0a0b0f;
+
+    /* Feedback */
+    --success: #3ddc84;
+    --success-soft: rgba(61, 220, 132, 0.12);
+    --danger: #ff6b6b;
+    --danger-soft: rgba(255, 107, 107, 0.12);
+
+    /* Chrome */
+    --nav-bg: rgba(10, 11, 15, 0.72);
+    --shadow-color: rgba(0, 0, 0, 0.45);
+    --shadow-accent: rgba(255, 91, 76, 0.18);
+    --code-window-bg: #14161c;
+    --code-window-bar: #1c1f27;
+    --scrollbar-thumb: rgba(255, 255, 255, 0.15);
+
+    --font-color-white: var(--text-primary);
+    --font-color-red: var(--accent);
+}
+
+[data-theme='light'] {
+    /* Surfaces — deliberately a visible step apart, not near-identical off-whites */
+    --bg-color: #eeeae2;
+    --bg-elevated: #ffffff;
+    --bg-elevated-2: #f5f1e9;
+    --bg-soft: rgba(20, 18, 15, 0.045);
+    --bg-soft-hover: rgba(20, 18, 15, 0.08);
+    --border-color: rgba(20, 18, 15, 0.15);
+    --border-color-strong: rgba(20, 18, 15, 0.26);
+
+    /* Text */
+    --text-primary: #16171c;
+    --text-secondary: #52565f;
+    --text-muted: #82868f;
+
+    /* Brand / accent */
+    --accent: #d6402f;
+    --accent-hover: #b8351f;
+    --accent-strong: #b8351f;
+    --accent-soft: rgba(214, 64, 47, 0.08);
+    --accent-soft-strong: rgba(214, 64, 47, 0.16);
+    --accent-contrast: #ffffff;
+
+    /* Feedback */
+    --success: #1f9d55;
+    --success-soft: rgba(31, 157, 85, 0.1);
+    --danger: #d6402f;
+    --danger-soft: rgba(214, 64, 47, 0.1);
+
+    /* Chrome */
+    --nav-bg: rgba(238, 234, 226, 0.82);
+    --shadow-color: rgba(20, 18, 15, 0.18);
+    --shadow-accent: rgba(214, 64, 47, 0.2);
+    --code-window-bg: #ffffff;
+    --code-window-bar: #efeae1;
+    --scrollbar-thumb: rgba(20, 18, 15, 0.24);
+
+    --font-color-white: var(--text-primary);
+    --font-color-red: var(--accent);
+}
+
+:root {
+    /* Noto Sans JP fallback covers Japanese glyphs Sora/Inter lack; unused (and un-downloaded) for other scripts */
+    --font-heading: 'Sora', 'Noto Sans JP', 'Segoe UI', sans-serif;
+    --font-body: 'Inter', 'Noto Sans JP', 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+    --container-padding: 100px;
+    --max-width: 1280px;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --transition: 0.3s ease;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --container-padding: 20px;
+    }
 }

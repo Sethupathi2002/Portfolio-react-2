@@ -1,17 +1,16 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
+import { SOCIAL_LINKS } from '../../data/socials';
 import resume from '../../assets/Sethupathi_Vijayakumar_Full_Stack_Developer_Resume.pdf.pdf';
+import Reveal from '../common/Reveal';
+import FaqAccordion from '../common/FaqAccordion';
 import './Contact.css';
 
 function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -44,7 +43,7 @@ function Contact() {
 
       setSubmitStatus({
         type: 'success',
-        message: '✅ Thank you! Your message has been sent successfully.'
+        message: t('contact.successMessage')
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
 
@@ -52,7 +51,7 @@ function Contact() {
       console.error('Submission error:', error);
       setSubmitStatus({
         type: 'error',
-        message: '❌ Something went wrong. Please try again later.'
+        message: t('contact.errorMessage')
       });
     } finally {
       setIsSubmitting(false);
@@ -61,10 +60,12 @@ function Contact() {
 
   return (
     <div className='contact-container'>
-      <div className="contact-left-side">
-        <h1>Let&rsquo;s Connect</h1>
-        <p className='contact-subtitle'>Feel free to reach out for collaborations or just a friendly hello</p>
-        
+      <div className='contact-columns'>
+      <Reveal as='div' direction='left' className="contact-left-side">
+        <p className='section-eyebrow'>{t('contact.eyebrow')}</p>
+        <h1 className='contact-heading'>{t('contact.heading')}</h1>
+        <p className='contact-subtitle'>{t('contact.subtitle')}</p>
+
         <div className='contact-content-text'>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className='contact-icon' />
@@ -76,82 +77,85 @@ function Contact() {
           </p>
           <p>
             <FontAwesomeIcon icon={faLocationDot} className='contact-icon' />
-            <span>Erode, Tamil Nadu, India</span>
+            <span>{t('contact.location')}</span>
           </p>
         </div>
 
         <div className='contact-content-icons'>
-          <a href="https://www.linkedin.com/in/sethupathi-vijayakumar-11848a214/" target='_blank' rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="https://github.com/Sethupathi2002" target='_blank' rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="https://www.instagram.com/sethupathi2002/" target='_blank' rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href="https://x.com/Sethupathi_2002" target='_blank' rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
+          {SOCIAL_LINKS.map((social) => (
+            <a key={social.label} href={social.href} target='_blank' rel="noopener noreferrer" aria-label={social.label}>
+              <FontAwesomeIcon icon={social.icon} />
+            </a>
+          ))}
         </div>
 
         <div className='contact-content-button-div'>
           <a href={resume} download="Sethupathi_Vijayakumar_Full_Stack_Developer_Resume.pdf" className='contact-content-button'>
-            <span>📄 Download CV</span>
+            <span>📄 {t('contact.downloadCV')}</span>
           </a>
         </div>
-      </div>
+      </Reveal>
 
-      <div className='contact-form-div'>
+      <Reveal as='div' direction='right' delay={100} className='contact-form-div'>
         <form onSubmit={handleSubmit} className='contact-form'>
-          <h3>Send a Message</h3>
-          
+          <h3>{t('contact.formTitle')}</h3>
+
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder={t('contact.namePlaceholder')}
+            aria-label={t('contact.namePlaceholder')}
             value={formData.name}
             onChange={handleChange}
             required
           />
-          
+
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder={t('contact.emailPlaceholder')}
+            aria-label={t('contact.emailPlaceholder')}
             value={formData.email}
             onChange={handleChange}
             required
           />
-          
+
           <input
             type="text"
             name="subject"
-            placeholder="Subject"
+            placeholder={t('contact.subjectPlaceholder')}
+            aria-label={t('contact.subjectPlaceholder')}
             value={formData.subject}
             onChange={handleChange}
             required
           />
-          
+
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder={t('contact.messagePlaceholder')}
+            aria-label={t('contact.messagePlaceholder')}
             value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
-          
+
           {submitStatus.message && (
             <div className={`form-status ${submitStatus.type}`}>
               {submitStatus.message}
             </div>
           )}
-          
+
           <button type="submit" disabled={isSubmitting}>
-            <span>{isSubmitting ? 'Sending...' : 'Send Message ✉️'}</span>
+            <span>{isSubmitting ? t('contact.sending') : `${t('contact.sendMessage')} ✉️`}</span>
           </button>
         </form>
+      </Reveal>
       </div>
+
+      <Reveal as='div' className='contact-faq'>
+        <h3 className='contact-faq-heading'>{t('faq.heading')}</h3>
+        <FaqAccordion />
+      </Reveal>
     </div>
   );
 }

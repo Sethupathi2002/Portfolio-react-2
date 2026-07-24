@@ -1,61 +1,104 @@
-/* eslint-disable react/no-unescaped-entities */
 import './About.css';
-import mainImage from '../../assets/main_man_and_moon.jpg';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { Link as ScrollLink } from 'react-scroll';
+import { SOCIAL_LINKS } from '../../data/socials';
+import { SCROLL_LINK_PROPS } from '../../utils/scrollProps';
+import Reveal from '../common/Reveal';
+import Marquee from '../common/Marquee';
+import { useSpotlight } from '../../hooks/useSpotlight';
+import { useTypewriter } from '../../hooks/useTypewriter';
 
 function About() {
+    const { t } = useTranslation();
+    const spotlightRef = useSpotlight();
+    const roles = t('hero.roles', { returnObjects: true });
+    const animatedRole = useTypewriter(Array.isArray(roles) ? roles : [t('hero.role')]);
+
+    const stats = [
+        { value: '3+', label: t('hero.statYears') },
+        { value: '10+', label: t('hero.statTech') },
+        { value: t('hero.statFocusValue'), label: t('hero.statFocusLabel') },
+    ];
+
     return (
         <>
-            <main>
-                <div className='main-image-div'>
-                    <img src={mainImage} alt="main_image" />
-                </div>
-                <div>
-                    <div className='main-content-div'>
-                        <h1 className='main-content-name'>Hi, I'm <span className='main-content-name-span'>Sethupathi</span></h1>
-                        <h2 className='main-content-skill'>
-                            <span className='main-content-skill-span'>Full Stack Developer</span>
-                        </h2>
-                        <p className='main-content-experience'>
-                            <span className='experience-badge'>3+ Years Experience</span>
-                        </p>
-                        <p>
-                            I am a <strong>Full Stack Developer</strong> with <strong>3+ years of experience</strong> specializing in 
-                            <strong> Java (Spring Boot)</strong> and <strong>React</strong>. I build scalable web applications with 
-                            expertise in both front-end and back-end development.
-                        </p>
-                        <p>
-                            On the <strong>back-end</strong>, I work with <strong>Spring Boot, Hibernate, Microservices, and REST APIs</strong>. 
-                            On the <strong>front-end</strong>, I use <strong>React, Next.js, TypeScript, and Tailwind CSS</strong> 
-                            to create responsive and performant user experiences. I also have experience with 
-                            <strong> Docker, Jenkins CI/CD, and AWS (EC2, S3)</strong> for cloud deployments.
-                        </p>
-                        <p>
-                            Driven by a passion for problem-solving, I approach each project with creativity and 
-                            technical precision, delivering secure, high-performance production systems aligned with 
-                            business goals.
-                        </p>
-                        <div className='main-content-icons'>
-                            <a href="https://www.linkedin.com/in/sethupathi-vijayakumar-11848a214/" target='_blank' rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-                            <a href="https://github.com/Sethupathi2002" target='_blank' rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                            <a href="https://www.instagram.com/sethupathi2002/" target='_blank' rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faInstagram} />
-                            </a>
-                            <a href="https://x.com/Sethupathi_2002" target='_blank' rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faTwitter} />
-                            </a>
+        <main id='main-content' ref={spotlightRef}>
+            <Reveal as='div' direction='left' className='hero-content'>
+                <p className='section-eyebrow'>{t('hero.eyebrow')}</p>
+                <h1 className='hero-name'>
+                    Sethupathi <span className='hero-name-accent'>Vijayakumar</span>
+                </h1>
+                <h2 className='hero-role'>
+                    {animatedRole}
+                    <span className='hero-role-cursor' aria-hidden='true' />
+                </h2>
+
+                <p className='hero-bio'>{t('hero.bio')}</p>
+
+                <p className='hero-status-line'>{t('hero.statusLine')}</p>
+
+                <div className='hero-stats'>
+                    {stats.map((stat) => (
+                        <div className='hero-stat' key={stat.label}>
+                            <span className='hero-stat-value'>{stat.value}</span>
+                            <span className='hero-stat-label'>{stat.label}</span>
                         </div>
-                    </div>
+                    ))}
                 </div>
-            </main>
+
+                <div className='hero-actions'>
+                    <ScrollLink to='projects' {...SCROLL_LINK_PROPS} className='hero-btn hero-btn-primary'>
+                        {t('hero.ctaWork')}
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </ScrollLink>
+                    <ScrollLink to='contact' {...SCROLL_LINK_PROPS} className='hero-btn hero-btn-outline'>
+                        {t('hero.ctaContact')}
+                    </ScrollLink>
+                </div>
+
+                <div className='hero-socials'>
+                    {SOCIAL_LINKS.map((social) => (
+                        <a key={social.label} href={social.href} target='_blank' rel='noopener noreferrer' aria-label={social.label}>
+                            <FontAwesomeIcon icon={social.icon} />
+                        </a>
+                    ))}
+                </div>
+            </Reveal>
+
+            <Reveal as='div' direction='right' delay={150} className='hero-visual'>
+                <div className='hero-visual-glow' aria-hidden='true' />
+                <div className='code-window' role='img' aria-label={t('hero.codeWindowAlt')}>
+                    <div className='code-window-bar'>
+                        <span className='code-dot code-dot-red' />
+                        <span className='code-dot code-dot-yellow' />
+                        <span className='code-dot code-dot-green' />
+                        <span className='code-window-title'>developer.js</span>
+                    </div>
+                    <pre className='code-window-body'>
+                        <code>
+                            <span className='code-kw'>const</span> developer = {'{'}{'\n'}
+                            {'  '}<span className='code-key'>name</span>: <span className='code-str'>&apos;Sethupathi Vijayakumar&apos;</span>,{'\n'}
+                            {'  '}<span className='code-key'>role</span>: <span className='code-str'>&apos;{t('hero.role')}&apos;</span>,{'\n'}
+                            {'  '}<span className='code-key'>experience</span>: <span className='code-str'>&apos;{t('hero.codeExperience')}&apos;</span>,{'\n'}
+                            {'  '}<span className='code-key'>stack</span>: [{'\n'}
+                            {'    '}<span className='code-str'>&apos;Java&apos;</span>,{'\n'}
+                            {'    '}<span className='code-str'>&apos;Python&apos;</span>,{'\n'}
+                            {'    '}<span className='code-str'>&apos;FastAPI&apos;</span>,{'\n'}
+                            {'    '}<span className='code-str'>&apos;React&apos;</span>,{'\n'}
+                            {'    '}<span className='code-str'>&apos;React Native&apos;</span>,{'\n'}
+                            {'  '}],{'\n'}
+                            {'  '}<span className='code-key'>focus</span>: <span className='code-str'>&apos;{t('hero.codeFocus')}&apos;</span>,{'\n'}
+                            {'  '}<span className='code-key'>hireable</span>: <span className='code-bool'>true</span>,{'\n'}
+                            {'}'}
+                            {';'}
+                        </code>
+                    </pre>
+                </div>
+            </Reveal>
+        </main>
+        <Marquee />
         </>
     );
 }

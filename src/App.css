@@ -1,23 +1,183 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('./var.css');
+
+section {
+    scroll-margin-top: 90px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color var(--transition);
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.2;
+/* Alternating surface tones so the wave dividers have something to cut into */
+#about,
+#skills,
+#services,
+#contact {
+    background: var(--bg-color);
 }
 
-a {
-    text-decoration: none;
+#experience,
+#projects {
+    background: var(--bg-elevated);
 }
 
-li {
-    list-style: none;
+/* Decorative layer: sits behind in-flow content within each section's own stacking context */
+.section-decor {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
 }
 
-body {
-    color: white;
-    background-color: #000000;
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--accent);
+    filter: blur(70px);
+    opacity: 0.32;
+}
+
+[data-theme='light'] .blob {
+    opacity: 0.16;
+}
+
+.blob-a {
+    width: 420px;
+    height: 420px;
+    top: -140px;
+    right: -100px;
+}
+
+.blob-b {
+    width: 340px;
+    height: 340px;
+    bottom: -150px;
+    left: -90px;
+}
+
+.dot-grid {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--border-color-strong) 1px, transparent 1.5px);
+    background-size: 28px 28px;
+    -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 25%, black 0%, transparent 75%);
+    mask-image: radial-gradient(ellipse 60% 55% at 50% 25%, black 0%, transparent 75%);
+}
+
+/* Wave dividers: filled with the *next* section's surface color, sitting at the seam */
+.wave-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 70px;
+    line-height: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.wave-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.wave-svg path {
+    transition: fill var(--transition);
+}
+
+.wave-elevated path {
+    fill: var(--bg-elevated);
+}
+
+.wave-base path {
+    fill: var(--bg-color);
+}
+
+.wave-flip {
+    transform: scaleX(-1);
+}
+
+@media (max-width: 800px) {
+    .blob {
+        filter: blur(40px);
+    }
+
+    .blob-a {
+        width: 240px;
+        height: 240px;
+    }
+
+    .blob-b {
+        width: 200px;
+        height: 200px;
+    }
+
+    .wave-divider {
+        height: 36px;
+    }
+}
+
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 16px;
+    z-index: 100;
+    padding: 12px 20px;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: top var(--transition);
+}
+
+.skip-link:focus-visible {
+    top: 16px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 24px var(--shadow-accent);
+    z-index: 40;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity var(--transition), transform var(--transition), background var(--transition);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--accent-hover);
+}
+
+@media (max-width: 800px) {
+    section {
+        scroll-margin-top: 70px;
+    }
+
+    .back-to-top {
+        right: 18px;
+        bottom: 18px;
+        width: 42px;
+        height: 42px;
+    }
 }

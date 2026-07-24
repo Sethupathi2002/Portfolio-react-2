@@ -1,0 +1,392 @@
+{
+  "nav": {
+    "about": "自己紹介",
+    "experience": "経歴",
+    "skills": "スキル",
+    "services": "サービス",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ",
+    "openPalette": "コマンドパレットを開く",
+    "paletteHint": "検索とコマンド (Ctrl/Cmd+K)",
+    "toggleTheme": "カラーテーマを切り替え",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "searchCommands": "検索とコマンド",
+    "language": "言語"
+  },
+  "hero": {
+    "eyebrow": "こんにちは、",
+    "role": "フルスタック Web・アプリ開発者",
+    "roles": [
+      "フルスタック Web・アプリ開発者",
+      "React・React Native開発者",
+      "Java・Spring Boot・Python開発者"
+    ],
+    "statusLine": "新しいフリーランス案件を募集中 — 一緒に何か作りましょう。",
+    "bio": "スケーラブルで本番品質のWeb・モバイルアプリケーションを、3年以上の経験を活かして開発しています。バックエンドはJava、Spring Boot、Python (FastAPI)、Web・モバイルのフロントエンドはReactとReact Native、デプロイにはDocker、Jenkins CI/CD、AWSを使用しています。クリーンな設計、安全なAPI、そして使いやすいインターフェースを大切にしています。",
+    "statYears": "年の経験",
+    "statTech": "技術",
+    "statFocusValue": "Web・アプリ",
+    "statFocusLabel": "Java、Python、React",
+    "ctaWork": "実績を見る",
+    "ctaContact": "お問い合わせ",
+    "codeWindowAlt": "Sethupathiをフルスタック Web・アプリ開発者として紹介するコードエディタウィンドウ",
+    "codeExperience": "3年以上",
+    "codeFocus": "スケーラブルで安全なWeb・モバイルアプリ"
+  },
+  "experience": {
+    "eyebrow": "職歴",
+    "heading": "経歴",
+    "subtext": "フルスタック Web・アプリ開発者として3年以上、社内SaaSプラットフォームやモバイルアプリから自動化ツール、大規模ECサイトまで、本番環境のソフトウェアを開発してきました。",
+    "current": "現職",
+    "present": "現在",
+    "durationYear_other": "{{count}}年",
+    "durationMonth_other": "{{count}}ヶ月",
+    "jobs": {
+      "zivoke": {
+        "role": "フルスタック Web・アプリ開発者",
+        "highlights": [
+          "ミーティング管理・プロジェクト/タスク管理・サポートデスク管理のための社内SaaSプラットフォーム「MyZivoke」をReactとPythonで開発中。",
+          "React Nativeでクロスプラットフォームの監査モバイルアプリを開発。",
+          "クライアント向けに、大量のWord(.docx)文書を高速に結合するNode.jsサービス「Safety Writer」を開発。",
+          "現在開発中のヘルスケアプラットフォームに貢献(機密情報のため詳細非公開)。"
+        ]
+      },
+      "tgk": {
+        "role": "フルスタック Web・アプリ開発者",
+        "highlights": [
+          "大規模ECプラットフォーム「Argos」の開発に参加し、商品カタログ、決済、ユーザー認証などの機能を構築。"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "得意分野",
+    "heading": "スキルと技術",
+    "subtext": "フルスタックアプリケーションを最初から最後まで設計・構築・提供するために使用している言語、フレームワーク、ツールの一覧です。",
+    "categories": {
+      "frontend": {
+        "label": "フロントエンド・モバイル",
+        "items": {
+          "react": { "name": "React.js", "description": "最新のReactとフックを使ったレスポンシブでコンポーネントベースのUI構築" },
+          "reactNative": { "name": "React Native", "description": "React Webのコードと共通ロジックを持つクロスプラットフォームモバイルアプリ" },
+          "nextjs": { "name": "Next.js", "description": "サーバーサイドレンダリング、静的生成、APIルート" },
+          "typescript": { "name": "TypeScript", "description": "スケーラブルで保守しやすいアプリケーションのための型安全なJavaScript" },
+          "tailwind": { "name": "Tailwind CSS", "description": "迅速で一貫性のあるUI開発のためのユーティリティファーストCSSフレームワーク" },
+          "javascript": { "name": "JavaScript (ES6+)", "description": "async/await、Promise、モジュールを使ったモダンJavaScript" }
+        }
+      },
+      "backend": {
+        "label": "バックエンド",
+        "items": {
+          "java": { "name": "Java", "description": "強固なオブジェクト指向の原則に基づくJavaプログラミング" },
+          "springBoot": { "name": "Spring Boot", "description": "RESTful APIと本番対応のマイクロサービスの構築" },
+          "python": { "name": "Python", "description": "クリーンで読みやすい構文によるスクリプティング、自動化、バックエンドサービス" },
+          "fastapi": { "name": "FastAPI", "description": "自動ドキュメント生成と検証機能を備えた高性能な非同期Python API" },
+          "springSecurity": { "name": "Spring Security & JWT", "description": "認証・認可とAPIのエンドツーエンドのセキュリティ" },
+          "hibernate": { "name": "Hibernate & JPA", "description": "クリーンで効率的なデータベース操作のためのORM" }
+        }
+      },
+      "apis": {
+        "label": "API・連携",
+        "items": {
+          "restApi": { "name": "RESTful API", "description": "スケーラブルでドキュメント化されたAPIの設計と実装" },
+          "graphql": { "name": "GraphQL", "description": "クライアントが必要とするデータだけを取得する柔軟なクエリ駆動API" },
+          "websockets": { "name": "WebSocket", "description": "ライブ機能や更新のためのリアルタイム双方向通信" },
+          "webhooks": { "name": "Webhook", "description": "サードパーティサービスと連携するイベント駆動型コールバック" },
+          "soap": { "name": "SOAP", "description": "レガシーな企業システム連携のためのXMLベースのメッセージング" }
+        }
+      },
+      "database": {
+        "label": "データベース",
+        "items": {
+          "mysql": { "name": "MySQL", "description": "最適化されたクエリによるリレーショナルデータベース管理" },
+          "postgresql": { "name": "PostgreSQL", "description": "JSONとインデックスをサポートする高度なリレーショナルデータベース" },
+          "mongodb": { "name": "MongoDB", "description": "柔軟でスケーラブルなデータ保存のためのNoSQLデータベース" },
+          "queryOptimization": { "name": "クエリ最適化", "description": "データベースのインデックス設計、キャッシュ、パフォーマンスチューニング" }
+        }
+      },
+      "cloud": {
+        "label": "クラウド・DevOps",
+        "items": {
+          "docker": { "name": "Docker", "description": "一貫性のある再現可能なデプロイのためのコンテナ化" },
+          "jenkins": { "name": "Jenkins", "description": "効率的で信頼性の高い配信パイプラインのためのCI/CD自動化" },
+          "awsEc2": { "name": "AWS EC2", "description": "スケーラブルなアプリケーションホスティングのためのクラウドコンピューティング" },
+          "awsS3": { "name": "AWS S3", "description": "ファイル、アセット、バックアップのためのオブジェクトストレージ" },
+          "gitGithub": { "name": "Git & GitHub", "description": "バージョン管理と共同開発ワークフロー" }
+        }
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "できること",
+    "heading": "サービス",
+    "subtext": "本業と並行して行うフリーランス案件 — 上記の本番実績と同じ技術スタックでのフルスタック開発。",
+    "items": {
+      "webApps": {
+        "title": "Webアプリケーション開発",
+        "description": "Reactフロントエンドと、Java/Spring BootまたはPython/FastAPIバックエンドによるフルスタックWebアプリケーション。",
+        "highlights": [
+          "ReactによるレスポンシブでコンポーネントベースなUI",
+          "Spring BootまたはFastAPIによるRESTful/GraphQL API",
+          "PostgreSQL/MySQLによるデータ設計とクエリ最適化"
+        ]
+      },
+      "mobileApps": {
+        "title": "モバイルアプリ開発",
+        "description": "React Nativeによる、iOSとAndroid向けのクロスプラットフォームアプリ。",
+        "highlights": [
+          "iOS・Android共通の単一React Nativeコードベース",
+          "既存バックエンドAPIとの連携",
+          "ストア公開に対応したビルドとリリース支援"
+        ]
+      },
+      "backendApi": {
+        "title": "API・バックエンド開発",
+        "description": "REST・GraphQL API、Webhook連携、安全なバックエンドシステム。",
+        "highlights": [
+          "Spring BootまたはFastAPIによるAPI設計",
+          "認証・認可(JWT、Spring Security)",
+          "サードパーティサービスとのWebhook連携"
+        ]
+      },
+      "cloudDevOps": {
+        "title": "データベース・クラウド展開",
+        "description": "PostgreSQL、MySQL、MongoDBのデータ層をDocker・CI/CD・AWSで展開。",
+        "highlights": [
+          "データベース設計とクエリ最適化",
+          "Dockerによるコンテナ化デプロイ",
+          "AWSホスティング(EC2、S3)とCI/CDパイプライン"
+        ]
+      },
+      "support": {
+        "title": "継続的なサポート・保守",
+        "description": "既存アプリケーションのバグ修正、機能改善、パフォーマンスチューニング。",
+        "highlights": [
+          "バグ修正と小規模な機能追加",
+          "パフォーマンス・クエリチューニング",
+          "継続的なリテイナー契約にも対応可能"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "主な実績",
+    "heading": "プロジェクト",
+    "subtext": "ECサイト、エンタープライズポータル、コンシューマー向けプラットフォームなど、これまでに開発・リリースした本番アプリケーションの一部です。プロジェクトをクリックすると詳細な事例を確認できます。",
+    "viewCaseStudy": "事例を見る",
+    "whatIBuilt": "構築した内容",
+    "visitLive": "サイトを見る",
+    "privateProject": "非公開プロジェクト — 一般公開されていません",
+    "items": {
+      "myzivoke": {
+        "title": "MyZivoke",
+        "description": "ミーティング、プロジェクト/タスク管理、サポートデスク、請求管理のための社内SaaSプラットフォーム。Zoho Sign、Fireflies、AvomaとWebhook連携。",
+        "role": "フルスタック Web・アプリ開発者 — Zivoke Tech Labs",
+        "highlights": [
+          "スケジューリングと調整のためのミーティング管理",
+          "チーム横断のプロジェクト・タスク管理",
+          "クライアント向けチケット管理のサポートデスク",
+          "きめ細かな権限設定によるユーザー・ロール管理",
+          "請求書およびSOW(作業範囲記述書)ファイル管理",
+          "電子署名や会議の文字起こしのため、Zoho Sign、Fireflies、AvomaとのWebhook連携"
+        ]
+      },
+      "auditApp": {
+        "title": "監査モバイルアプリ",
+        "description": "社内の監査業務のためにReact Nativeで構築したクロスプラットフォームモバイルアプリ。",
+        "role": "フルスタック Web・アプリ開発者 — Zivoke Tech Labs",
+        "highlights": [
+          "React NativeでiOSとAndroid向けにエンドツーエンドで開発",
+          "非公開のクライアント案件のため、UIは公開不可"
+        ]
+      },
+      "argos": {
+        "title": "Argos ECプラットフォーム",
+        "description": "商品カタログ、決済、ユーザー認証を備えた大規模ECプラットフォーム。",
+        "role": "フルスタック Web・アプリ開発者 — TGK Streamline Solutions",
+        "highlights": [
+          "商品カタログと検索機能",
+          "決済処理の連携",
+          "ユーザー認証とアカウント管理",
+          "大規模で確立された小売プラットフォームの開発チームの一員として貢献"
+        ]
+      },
+      "foodDelivery": {
+        "title": "フードデリバリーアプリ",
+        "description": "リアルタイム注文追跡と決済連携を備えたフルスタックのフードデリバリープラットフォーム。",
+        "role": "個人プロジェクト — 個人開発",
+        "highlights": [
+          "リアルタイムのステータス更新による注文追跡",
+          "エンドツーエンドの安全な決済連携",
+          "Reactのみで構築したレスポンシブUI",
+          "Spring BootとMySQLによるRESTfulバックエンド"
+        ]
+      },
+      "healthcarePortal": {
+        "title": "ヘルスケア患者ポータル",
+        "description": "患者がカルテにアクセスし、予約を取り、医療提供者とやり取りできる安全なポータル。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "HIPAA準拠の安全な認証",
+          "患者によるカルテへのアクセス",
+          "予約スケジューリングのワークフロー",
+          "患者と医療提供者間の安全なメッセージング",
+          "オンライン診療のためのテレヘルス連携"
+        ]
+      },
+      "eventManagement": {
+        "title": "イベント管理プラットフォーム",
+        "description": "イベントの企画、チケット販売、参加者管理を一元化する総合プラットフォーム。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "イベントの作成・管理ツール",
+          "決済連携付きのチケット予約",
+          "QRコード生成とチェックインスキャン",
+          "リアルタイムの参加者分析",
+          "自動メール通知"
+        ]
+      },
+      "inventorySupplyChain": {
+        "title": "在庫・サプライチェーン管理",
+        "description": "自動発注とサプライヤー管理を備えたマルチ倉庫対応の在庫追跡プラットフォーム。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "複数倉庫にまたがる在庫追跡",
+          "自動発注アラート",
+          "サプライヤー管理ワークフロー",
+          "バーコード/QRコードスキャン",
+          "在庫インサイトのための分析ダッシュボード",
+          "一括インポート/エクスポートツール"
+        ]
+      },
+      "lms": {
+        "title": "学習管理システム(LMS)",
+        "description": "オンラインコースの作成・管理・提供と、受講者の進捗トラッキングを行うプラットフォーム。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "コースの作成と管理",
+          "受講登録と進捗トラッキング",
+          "クイズと課題",
+          "修了時の認定証とバッジ",
+          "コースコミュニティ向けディスカッションフォーラム",
+          "ライブ配信連携",
+          "講師向け分析ダッシュボード"
+        ]
+      },
+      "fitnessTracker": {
+        "title": "フィットネストラッカー&ソーシャルアプリ",
+        "description": "iOSとAndroid向けのクロスプラットフォームフィットネスアプリ。ワークアウト追跡とソーシャルコミュニティ機能を搭載。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "GPSによるワークアウト追跡",
+          "ソーシャルフィードとフィットネスチャレンジ",
+          "エンゲージメント向上のためのプッシュ通知"
+        ]
+      },
+      "serviceBooking": {
+        "title": "オンデマンドサービス予約アプリ",
+        "description": "iOSとAndroid向けのクロスプラットフォームアプリ。オンデマンドのサービス提供者をリアルタイムで検索・予約可能。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "サービス提供者の検索",
+          "リアルタイムの予約フロー",
+          "アプリ内決済",
+          "提供者のライブトラッキング",
+          "評価とレビュー"
+        ]
+      },
+      "financeBudget": {
+        "title": "個人資産・予算管理アプリ",
+        "description": "iOSとAndroid向けのクロスプラットフォーム個人資産管理アプリ。支出と予算を追跡。",
+        "role": "フリーランス案件 — 独立契約者",
+        "highlights": [
+          "銀行口座連携",
+          "自動的な支出分類",
+          "予算管理",
+          "パーソナライズされた財務インサイト",
+          "請求書リマインダー"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "お問い合わせ",
+    "heading": "つながりましょう",
+    "subtitle": "ポジション、プロジェクト、アイデアなどございましたら、お気軽にご連絡ください。新しい機会やコラボレーションについていつでもお話しします。",
+    "location": "インド、タミル・ナードゥ州、イロード",
+    "formTitle": "メッセージを送る",
+    "namePlaceholder": "お名前",
+    "emailPlaceholder": "メールアドレス",
+    "subjectPlaceholder": "件名",
+    "messagePlaceholder": "メッセージ",
+    "downloadCV": "履歴書をダウンロード",
+    "sendMessage": "メッセージを送信",
+    "sending": "送信中...",
+    "successMessage": "✅ ありがとうございます！メッセージが正常に送信されました。",
+    "errorMessage": "❌ 問題が発生しました。しばらくしてからもう一度お試しください。"
+  },
+  "faq": {
+    "heading": "よくある質問",
+    "items": {
+      "availability": {
+        "question": "フリーランス案件の依頼は可能ですか?",
+        "answer": "本業と並行して、選定したフリーランス案件をお受けしています。希望の納期と範囲をお知らせいただければ、対応可能かお伝えします。"
+      },
+      "process": {
+        "question": "どのような進め方になりますか?",
+        "answer": "まず簡単なヒアリングで要件を確認し、概算のスケジュールをお伝えした上で、納品まで定期的に進捗を共有します。"
+      },
+      "techStack": {
+        "question": "どのような技術を使いますか?",
+        "answer": "フロントエンドはReactとReact Native、バックエンドはJava/Spring BootとPython/FastAPI、データと展開にはPostgreSQL、MySQL、Docker、AWSを使用します。"
+      },
+      "nda": {
+        "question": "秘密保持契約(NDA)は締結できますか?",
+        "answer": "はい。プロジェクトの詳細をお話しする前に、NDAへの署名も可能です。"
+      },
+      "timezone": {
+        "question": "タイムゾーンはどこですか?",
+        "answer": "インド(IST)を拠点にしています。タイムゾーンをまたいだ通話にも対応し、その間はメールで非同期に進捗を共有します。"
+      },
+      "support": {
+        "question": "リリース後のサポートはありますか?",
+        "answer": "はい。上記の継続的なサポート・保守サービスにて、リリース後も継続的にサポートします。"
+      }
+    }
+  },
+  "stickyHire": {
+    "text": "フリーランス案件を募集中",
+    "cta": "相談する"
+  },
+  "footer": {
+    "tagline": "Java、Python、React、React Nativeでスケーラブルかつ安全なプロダクトを作るフルスタック Web・アプリ開発者。",
+    "rights": "無断複写・転載を禁じます。",
+    "builtWith": "Reactとたくさんのコーヒーで作りました。"
+  },
+  "commandPalette": {
+    "placeholder": "コマンドを入力または検索...",
+    "noResults": "一致するコマンドがありません",
+    "goToAbout": "自己紹介へ移動",
+    "goToExperience": "経歴へ移動",
+    "goToSkills": "スキルへ移動",
+    "goToServices": "サービスへ移動",
+    "goToProjects": "プロジェクトへ移動",
+    "goToContact": "お問い合わせへ移動",
+    "switchLight": "ライトモードに切り替え",
+    "switchDark": "ダークモードに切り替え",
+    "downloadResume": "履歴書をダウンロード",
+    "openGithub": "GitHubプロフィールを開く",
+    "openLinkedin": "LinkedInプロフィールを開く",
+    "copyEmail": "メールアドレスをコピー",
+    "switchLanguage": "言語を切り替え：",
+    "emailCopied": "コピーしました！"
+  },
+  "a11y": {
+    "backToTop": "トップへ戻る",
+    "close": "閉じる",
+    "skipToContent": "コンテンツへスキップ"
+  }
+}

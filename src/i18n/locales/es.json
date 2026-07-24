@@ -1,0 +1,394 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "openPalette": "Abrir paleta de comandos",
+    "paletteHint": "Buscar y comandos (Ctrl/Cmd+K)",
+    "toggleTheme": "Cambiar tema de color",
+    "lightMode": "Modo claro",
+    "darkMode": "Modo oscuro",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "searchCommands": "Buscar y comandos",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Hola, soy",
+    "role": "Desarrollador Full Stack Web y App",
+    "roles": [
+      "Desarrollador Full Stack Web y App",
+      "Desarrollador React y React Native",
+      "Desarrollador Java · Spring Boot · Python"
+    ],
+    "statusLine": "Disponible para nuevos proyectos freelance — hablemos.",
+    "bio": "Desarrollo aplicaciones web y móviles escalables y de nivel de producción con más de 3 años de experiencia en toda la pila: Java, Spring Boot y Python (FastAPI) en el backend, React y React Native en el frontend web y móvil, desplegadas con Docker, Jenkins CI/CD y AWS. Me preocupo por una arquitectura limpia, APIs seguras e interfaces que se sientan sencillas de usar.",
+    "statYears": "Años de Experiencia",
+    "statTech": "Tecnologías",
+    "statFocusValue": "Web y App",
+    "statFocusLabel": "Java, Python y React",
+    "ctaWork": "Ver Mi Trabajo",
+    "ctaContact": "Contactar",
+    "codeWindowAlt": "Ventana de editor de código que describe a Sethupathi como desarrollador full stack web y app",
+    "codeExperience": "3+ años",
+    "codeFocus": "aplicaciones web y móviles escalables y seguras"
+  },
+  "experience": {
+    "eyebrow": "Dónde He Trabajado",
+    "heading": "Experiencia",
+    "subtext": "Más de 3 años desarrollando software de producción como Desarrollador Full Stack Web y App — desde plataformas SaaS internas y aplicaciones móviles hasta herramientas de automatización y comercio electrónico a gran escala.",
+    "current": "Actual",
+    "present": "Actualidad",
+    "durationYear_one": "{{count}} año",
+    "durationYear_other": "{{count}} años",
+    "durationMonth_one": "{{count}} mes",
+    "durationMonth_other": "{{count}} meses",
+    "jobs": {
+      "zivoke": {
+        "role": "Desarrollador Full Stack Web y App",
+        "highlights": [
+          "Desarrollando \"MyZivoke\", una plataforma SaaS interna para la gestión de reuniones, proyectos/tareas y mesa de soporte, con React y Python.",
+          "Desarrollé una aplicación móvil multiplataforma de auditoría con React Native.",
+          "Construí \"Safety Writer\", un servicio Node.js de alta velocidad que combina grandes lotes de documentos Word (.docx) para un cliente.",
+          "Contribuyendo a una plataforma de salud actualmente en desarrollo (confidencial)."
+        ]
+      },
+      "tgk": {
+        "role": "Desarrollador Full Stack Web y App",
+        "highlights": [
+          "Contribuí a Argos, una plataforma de comercio electrónico a gran escala, desarrollando funciones de catálogo de productos, pagos y autenticación de usuarios."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Con Qué Trabajo",
+    "heading": "Habilidades y Tecnologías",
+    "subtext": "Un resumen de los lenguajes, frameworks y herramientas que uso para diseñar, construir y entregar aplicaciones full-stack de principio a fin.",
+    "categories": {
+      "frontend": {
+        "label": "Frontend y Móvil",
+        "items": {
+          "react": { "name": "React.js", "description": "Construcción de interfaces responsivas basadas en componentes con React moderno y hooks" },
+          "reactNative": { "name": "React Native", "description": "Aplicaciones móviles multiplataforma que comparten lógica con el código web de React" },
+          "nextjs": { "name": "Next.js", "description": "Renderizado del lado del servidor, generación estática y rutas de API" },
+          "typescript": { "name": "TypeScript", "description": "JavaScript con tipado seguro para aplicaciones escalables y mantenibles" },
+          "tailwind": { "name": "Tailwind CSS", "description": "Framework CSS utility-first para un desarrollo de UI rápido y consistente" },
+          "javascript": { "name": "JavaScript (ES6+)", "description": "JavaScript moderno con async/await, promesas y módulos" }
+        }
+      },
+      "backend": {
+        "label": "Backend",
+        "items": {
+          "java": { "name": "Java", "description": "Programación en Java con sólidos principios de orientación a objetos" },
+          "springBoot": { "name": "Spring Boot", "description": "Construcción de APIs RESTful y microservicios listos para producción" },
+          "python": { "name": "Python", "description": "Scripting, automatización y servicios backend con una sintaxis limpia y legible" },
+          "fastapi": { "name": "FastAPI", "description": "APIs asíncronas de alto rendimiento en Python con documentación y validación automáticas" },
+          "springSecurity": { "name": "Spring Security y JWT", "description": "Autenticación, autorización y seguridad de APIs de principio a fin" },
+          "hibernate": { "name": "Hibernate y JPA", "description": "ORM para operaciones de base de datos limpias y eficientes" }
+        }
+      },
+      "apis": {
+        "label": "APIs e Integración",
+        "items": {
+          "restApi": { "name": "APIs RESTful", "description": "Diseño e implementación de APIs escalables y bien documentadas" },
+          "graphql": { "name": "GraphQL", "description": "APIs flexibles basadas en consultas que obtienen exactamente los datos que los clientes necesitan" },
+          "websockets": { "name": "WebSockets", "description": "Comunicación bidireccional en tiempo real para funciones y actualizaciones en vivo" },
+          "webhooks": { "name": "Webhooks", "description": "Callbacks basados en eventos para integrarse con servicios de terceros" },
+          "soap": { "name": "SOAP", "description": "Mensajería basada en XML para integración con sistemas empresariales heredados" }
+        }
+      },
+      "database": {
+        "label": "Base de Datos",
+        "items": {
+          "mysql": { "name": "MySQL", "description": "Gestión de bases de datos relacionales con consultas optimizadas" },
+          "postgresql": { "name": "PostgreSQL", "description": "Base de datos relacional avanzada con soporte de JSON e indexación" },
+          "mongodb": { "name": "MongoDB", "description": "Base de datos NoSQL para almacenamiento de datos flexible y escalable" },
+          "queryOptimization": { "name": "Optimización de Consultas", "description": "Indexación, caché y ajuste de rendimiento para bases de datos" }
+        }
+      },
+      "cloud": {
+        "label": "Nube y DevOps",
+        "items": {
+          "docker": { "name": "Docker", "description": "Contenerización para despliegues consistentes y reproducibles" },
+          "jenkins": { "name": "Jenkins", "description": "Automatización de CI/CD para flujos de entrega optimizados y confiables" },
+          "awsEc2": { "name": "AWS EC2", "description": "Cómputo en la nube para alojamiento de aplicaciones escalable" },
+          "awsS3": { "name": "AWS S3", "description": "Almacenamiento de objetos para archivos, activos y copias de seguridad" },
+          "gitGithub": { "name": "Git y GitHub", "description": "Control de versiones y flujos de trabajo de desarrollo colaborativo" }
+        }
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Cómo Puedo Ayudar",
+    "heading": "Servicios",
+    "subtext": "Colaboraciones freelance junto a mi rol a tiempo completo — desarrollo full-stack con la misma tecnología del trabajo de producción de arriba.",
+    "items": {
+      "webApps": {
+        "title": "Desarrollo de Aplicaciones Web",
+        "description": "Aplicaciones web full-stack con frontends en React y backends en Java/Spring Boot o Python/FastAPI.",
+        "highlights": [
+          "Interfaces responsivas basadas en componentes con React",
+          "APIs RESTful o GraphQL sobre Spring Boot o FastAPI",
+          "Modelado de datos y optimización de consultas en PostgreSQL/MySQL"
+        ]
+      },
+      "mobileApps": {
+        "title": "Desarrollo de Aplicaciones Móviles",
+        "description": "Apps multiplataforma para iOS y Android construidas con React Native.",
+        "highlights": [
+          "Un único código React Native para iOS y Android",
+          "Integración con APIs de backend existentes",
+          "Builds listos para tienda y soporte de publicación"
+        ]
+      },
+      "backendApi": {
+        "title": "Desarrollo de APIs y Backend",
+        "description": "APIs REST y GraphQL, integraciones por webhook y sistemas backend seguros.",
+        "highlights": [
+          "Diseño de APIs con Spring Boot o FastAPI",
+          "Autenticación y autorización (JWT, Spring Security)",
+          "Integraciones basadas en webhooks con servicios de terceros"
+        ]
+      },
+      "cloudDevOps": {
+        "title": "Base de Datos y Despliegue en la Nube",
+        "description": "Capas de datos en PostgreSQL, MySQL y MongoDB desplegadas con Docker, CI/CD y AWS.",
+        "highlights": [
+          "Diseño de bases de datos y optimización de consultas",
+          "Despliegues en contenedores con Docker",
+          "Alojamiento en AWS (EC2, S3) y pipelines de CI/CD"
+        ]
+      },
+      "support": {
+        "title": "Soporte y Mantenimiento Continuo",
+        "description": "Corrección de errores, iteración de funcionalidades y ajuste de rendimiento para aplicaciones existentes.",
+        "highlights": [
+          "Corrección de errores y pequeñas nuevas funcionalidades",
+          "Ajuste de rendimiento y consultas",
+          "Disponible para trabajo continuo tipo retainer"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Trabajo Seleccionado",
+    "heading": "Proyectos",
+    "subtext": "Algunas aplicaciones de producción que he construido y entregado, abarcando comercio electrónico, portales empresariales y plataformas de consumo. Haz clic en un proyecto para ver el caso de estudio completo.",
+    "viewCaseStudy": "Ver Caso de Estudio",
+    "whatIBuilt": "Lo Que Construí",
+    "visitLive": "Visitar Sitio en Vivo",
+    "privateProject": "Proyecto privado — no disponible públicamente",
+    "items": {
+      "myzivoke": {
+        "title": "MyZivoke",
+        "description": "Plataforma SaaS interna para reuniones, seguimiento de proyectos/tareas, mesa de soporte y facturación — con integraciones basadas en webhooks a Zoho Sign, Fireflies y Avoma.",
+        "role": "Desarrollador Full Stack Web y App — Zivoke Tech Labs",
+        "highlights": [
+          "Gestión de reuniones con flujos de programación y coordinación",
+          "Gestión de proyectos y tareas entre equipos",
+          "Mesa de soporte para tickets e incidencias de clientes",
+          "Gestión de usuarios y roles con permisos granulares",
+          "Gestión de facturas y archivos SOW (Statement of Work)",
+          "Integraciones basadas en webhooks con Zoho Sign, Fireflies y Avoma para firmas electrónicas y transcripciones de reuniones"
+        ]
+      },
+      "auditApp": {
+        "title": "App Móvil de Auditoría",
+        "description": "Una aplicación móvil multiplataforma construida con React Native para flujos de trabajo de auditoría internos.",
+        "role": "Desarrollador Full Stack Web y App — Zivoke Tech Labs",
+        "highlights": [
+          "Construida de principio a fin con React Native para iOS y Android",
+          "Proyecto de cliente privado — interfaz no compartible públicamente"
+        ]
+      },
+      "argos": {
+        "title": "Plataforma de E-Commerce Argos",
+        "description": "Plataforma de comercio electrónico a gran escala con catálogo de productos, pagos y autenticación de usuarios.",
+        "role": "Desarrollador Full Stack Web y App — TGK Streamline Solutions",
+        "highlights": [
+          "Catálogo de productos y funcionalidad de búsqueda",
+          "Integración de procesamiento de pagos",
+          "Autenticación de usuarios y gestión de cuentas",
+          "Uno de varios colaboradores en una plataforma minorista grande y consolidada"
+        ]
+      },
+      "foodDelivery": {
+        "title": "Aplicación de Entrega de Comida",
+        "description": "Plataforma full-stack de entrega de comida con seguimiento de pedidos en tiempo real e integración de pagos.",
+        "role": "Proyecto Personal — Desarrollador Solo",
+        "highlights": [
+          "Seguimiento de pedidos en tiempo real con actualizaciones de estado en vivo",
+          "Integración de pagos segura de principio a fin",
+          "Interfaz responsiva construida enteramente con React",
+          "Backend RESTful con Spring Boot y MySQL"
+        ]
+      },
+      "healthcarePortal": {
+        "title": "Portal de Pacientes de Salud",
+        "description": "Portal seguro para que los pacientes accedan a historiales médicos, programen citas y se comuniquen con sus proveedores.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Autenticación segura conforme a HIPAA",
+          "Acceso de pacientes al historial médico",
+          "Flujos de programación de citas",
+          "Mensajería segura entre pacientes y proveedores",
+          "Integración de telemedicina para consultas virtuales"
+        ]
+      },
+      "eventManagement": {
+        "title": "Plataforma de Gestión de Eventos",
+        "description": "Plataforma integral para organizar eventos, vender entradas y gestionar asistentes.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Herramientas de creación y gestión de eventos",
+          "Reserva de entradas con pagos integrados",
+          "Generación de códigos QR y escaneo de acceso",
+          "Analítica de asistentes en tiempo real",
+          "Notificaciones automáticas por correo electrónico"
+        ]
+      },
+      "inventorySupplyChain": {
+        "title": "Gestión de Inventario y Cadena de Suministro",
+        "description": "Plataforma de seguimiento de inventario multi-almacén con reposición automática y gestión de proveedores.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Seguimiento de inventario en múltiples almacenes",
+          "Alertas automáticas de reposición",
+          "Flujos de gestión de proveedores",
+          "Escaneo de códigos de barras/QR",
+          "Panel de análisis de existencias",
+          "Herramientas de importación/exportación masiva"
+        ]
+      },
+      "lms": {
+        "title": "Sistema de Gestión de Aprendizaje (LMS)",
+        "description": "Plataforma para crear, gestionar e impartir cursos en línea con seguimiento del progreso de los estudiantes.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Creación y gestión de cursos",
+          "Inscripción y seguimiento del progreso de estudiantes",
+          "Cuestionarios y tareas",
+          "Certificados e insignias al completar",
+          "Foros de discusión para las comunidades del curso",
+          "Integración de transmisión en vivo",
+          "Panel de análisis para instructores"
+        ]
+      },
+      "fitnessTracker": {
+        "title": "App de Fitness y Red Social",
+        "description": "App de fitness multiplataforma para iOS y Android con seguimiento de entrenamientos y una capa social comunitaria.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Seguimiento de entrenamientos con GPS",
+          "Feed social y retos de fitness",
+          "Notificaciones push para fomentar el uso"
+        ]
+      },
+      "serviceBooking": {
+        "title": "App de Reserva de Servicios a Demanda",
+        "description": "App multiplataforma para iOS y Android para descubrir y reservar proveedores de servicios a demanda en tiempo real.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Descubrimiento de proveedores de servicios",
+          "Flujo de reserva en tiempo real",
+          "Pagos dentro de la app",
+          "Seguimiento en vivo del proveedor",
+          "Calificaciones y reseñas"
+        ]
+      },
+      "financeBudget": {
+        "title": "App de Finanzas Personales y Presupuesto",
+        "description": "App de finanzas personales multiplataforma para iOS y Android para el seguimiento de gastos y presupuestos.",
+        "role": "Proyecto Freelance — Contratista Independiente",
+        "highlights": [
+          "Integración con cuentas bancarias",
+          "Categorización automática de gastos",
+          "Seguimiento de presupuesto",
+          "Información financiera personalizada",
+          "Recordatorios de facturas"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Ponte en Contacto",
+    "heading": "Conectemos",
+    "subtitle": "¿Tienes un puesto, proyecto o idea en mente? Siempre estoy abierto a hablar sobre nuevas oportunidades y colaboraciones.",
+    "location": "Erode, Tamil Nadu, India",
+    "formTitle": "Enviar un Mensaje",
+    "namePlaceholder": "Tu Nombre",
+    "emailPlaceholder": "Tu Correo",
+    "subjectPlaceholder": "Asunto",
+    "messagePlaceholder": "Tu Mensaje",
+    "downloadCV": "Descargar CV",
+    "sendMessage": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successMessage": "✅ ¡Gracias! Tu mensaje se ha enviado correctamente.",
+    "errorMessage": "❌ Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+  },
+  "faq": {
+    "heading": "Preguntas Frecuentes",
+    "items": {
+      "availability": {
+        "question": "¿Estás disponible para proyectos freelance?",
+        "answer": "Acepto proyectos freelance seleccionados junto a mi rol a tiempo completo — cuéntame tu plazo y alcance, y te diré si encaja."
+      },
+      "process": {
+        "question": "¿Cuál es tu proceso habitual?",
+        "answer": "Empezamos con una llamada rápida para definir los requisitos, comparto un plazo estimado y recibes actualizaciones de progreso regulares hasta la entrega."
+      },
+      "techStack": {
+        "question": "¿Con qué tecnologías trabajas?",
+        "answer": "React y React Native en el frontend, Java/Spring Boot y Python/FastAPI en el backend, con PostgreSQL, MySQL, Docker y AWS para datos y despliegue."
+      },
+      "nda": {
+        "question": "¿Firmas acuerdos de confidencialidad (NDA)?",
+        "answer": "Sí — encantado de firmar un NDA antes de discutir los detalles del proyecto."
+      },
+      "timezone": {
+        "question": "¿En qué zona horaria estás?",
+        "answer": "Con base en India (IST). Encantado de coordinar llamadas entre zonas horarias, con actualizaciones asíncronas por correo mientras tanto."
+      },
+      "support": {
+        "question": "¿Ofreces soporte después del lanzamiento?",
+        "answer": "Sí — consulta el servicio de Soporte y Mantenimiento arriba para ayuda continua después de que tu proyecto se lance."
+      }
+    }
+  },
+  "stickyHire": {
+    "text": "Disponible para proyectos freelance",
+    "cta": "Hablemos"
+  },
+  "footer": {
+    "tagline": "Desarrollador Full Stack Web y App creando productos escalables y seguros con Java, Python, React y React Native.",
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Hecho con React y mucho café."
+  },
+  "commandPalette": {
+    "placeholder": "Escribe un comando o busca...",
+    "noResults": "No hay comandos coincidentes",
+    "goToAbout": "Ir a Sobre Mí",
+    "goToExperience": "Ir a Experiencia",
+    "goToSkills": "Ir a Habilidades",
+    "goToServices": "Ir a Servicios",
+    "goToProjects": "Ir a Proyectos",
+    "goToContact": "Ir a Contacto",
+    "switchLight": "Cambiar a Modo Claro",
+    "switchDark": "Cambiar a Modo Oscuro",
+    "downloadResume": "Descargar Currículum",
+    "openGithub": "Abrir Perfil de GitHub",
+    "openLinkedin": "Abrir Perfil de LinkedIn",
+    "copyEmail": "Copiar Dirección de Correo",
+    "switchLanguage": "Cambiar idioma a",
+    "emailCopied": "¡Correo Copiado!"
+  },
+  "a11y": {
+    "backToTop": "Volver arriba",
+    "close": "Cerrar",
+    "skipToContent": "Saltar al contenido"
+  }
+}

@@ -1,0 +1,113 @@
+@import url(../../var.css);
+
+.footer {
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-color);
+}
+
+.footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 50px var(--container-padding) 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.footer-logo-brace {
+    color: var(--accent);
+}
+
+.footer-tagline {
+    margin-top: 12px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 320px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    transition: all var(--transition);
+}
+
+.footer-socials a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px var(--container-padding) 30px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+@media (max-width: 800px) {
+    .footer-content {
+        padding: 40px var(--container-padding) 24px;
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        padding: 18px var(--container-padding) 26px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

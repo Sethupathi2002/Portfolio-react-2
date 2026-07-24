@@ -5,37 +5,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./src/assets/portfolio-logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icon-512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <title>Sethupathi Portfolio-React</title>
+  <title>Sethupathi Vijayakumar | Full Stack Web &amp; App Developer in India</title>
+
+  <!-- Kept in sync with --bg-color in src/var.css for each theme, and with ThemeContext.jsx at runtime -->
+  <meta name="theme-color" content="#0a0b0f">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('portfolio-theme');
+        var theme = stored === 'light' || stored === 'dark'
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.style.colorScheme = theme;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#eeeae2' : '#0a0b0f');
+      } catch (e) {}
+    })();
+  </script>
 
   <meta name="description"
-    content="The official portfolio of Sethupathi Vijayakumar, showcasing skills, projects, and experiences in full-stack development.">
-  <meta name="keywords" content="Sethupathi Vijayakumar, portfolio, web developer, React, full-stack developer">
+    content="Sethupathi Vijayakumar is a Full Stack Web &amp; App Developer based in Tamil Nadu, India, building with React, React Native, Java, and Python. Available for full stack developer roles across India, including Chennai.">
+  <meta name="keywords"
+    content="full stack developer India, full stack developer Tamil Nadu, full stack developer Chennai, web developer India, app developer India, React developer India, React Native developer, Java developer, Python developer, Sethupathi Vijayakumar">
   <meta name="author" content="Sethupathi Vijayakumar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sethupathi-r-portfolio.netlify.app/">
 
-  <meta property="og:title" content="Sethupathi Vijayakumar Portfolio">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Sethupathi Vijayakumar | Full Stack Web & App Developer in India">
   <meta property="og:description"
-    content="The official portfolio of Sethupathi Vijayakumar, showcasing skills, projects, and experiences.">
+    content="Full Stack Web & App Developer based in Tamil Nadu, India — building with React, React Native, Java, and Python. Available for roles across India, including Chennai.">
   <meta property="og:url" content="https://sethupathi-r-portfolio.netlify.app/">
   <meta property="og:image" content="https://sethupathi-r-portfolio.netlify.app/assets/portfolio-screenshot.png">
+  <meta property="og:locale" content="en_IN">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sethupathi Vijayakumar Portfolio">
+  <meta name="twitter:title" content="Sethupathi Vijayakumar | Full Stack Web & App Developer in India">
   <meta name="twitter:description"
-    content="The official portfolio of Sethupathi Vijayakumar, showcasing skills, projects, and experiences.">
+    content="Full Stack Web & App Developer based in Tamil Nadu, India — building with React, React Native, Java, and Python.">
   <meta name="twitter:image" content="https://sethupathi-r-portfolio.netlify.app/assets/portfolio-screenshot.png">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sethupathi Vijayakumar",
+    "jobTitle": "Full Stack Web & App Developer",
+    "description": "Full Stack Web & App Developer based in Tamil Nadu, India, building with React, React Native, Java, and Python. Available for full stack developer roles across India, including Chennai.",
+    "url": "https://sethupathi-r-portfolio.netlify.app/",
+    "image": "https://sethupathi-r-portfolio.netlify.app/assets/portfolio-screenshot.png",
+    "email": "mailto:sethupathi.vk@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Erode",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Zivoke Tech Labs Private Limited"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/sethupathi-vijayakumar-11848a214/",
+      "https://github.com/Sethupathi2002",
+      "https://www.instagram.com/sethupathi2002/",
+      "https://x.com/Sethupathi_2002"
+    ],
+    "knowsAbout": [
+      "Java", "Spring Boot", "React", "React Native", "Next.js", "TypeScript",
+      "Python", "FastAPI", "GraphQL", "WebSockets", "Docker", "AWS"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Application Development",
+          "description": "Full-stack web applications with React frontends and Java/Spring Boot or Python/FastAPI backends."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile App Development",
+          "description": "Cross-platform iOS and Android apps built with React Native."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "API & Backend Development",
+          "description": "REST and GraphQL APIs, webhook integrations, and secure backend systems."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Database & Cloud Deployment",
+          "description": "PostgreSQL, MySQL, and MongoDB data layers deployed with Docker, CI/CD, and AWS."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ongoing Support & Maintenance",
+          "description": "Bug fixes, feature iterations, and performance tuning for existing applications."
+        }
+      }
+    ]
+  }
+  </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are you available for freelance projects?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I take on select freelance projects alongside my full-time role — reach out with your timeline and scope, and I'll let you know if it's a good fit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's your typical process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We start with a quick call to scope requirements, I share an estimated timeline, and you get regular progress updates until delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "React and React Native on the frontend, Java/Spring Boot and Python/FastAPI on the backend, with PostgreSQL, MySQL, Docker, and AWS for data and deployment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you sign NDAs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — happy to sign an NDA before discussing project details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What timezone are you in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Based in India (IST). Happy to coordinate calls across timezones, with async updates via email in between."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer support after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — see the Support & Maintenance service above for ongoing help after your project ships."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://kit.fontawesome.com/32580299c5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
